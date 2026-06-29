@@ -16,7 +16,6 @@ Passionate about solving real-world problems using Artificial Intelligence, Mach
 - 🤖 Building **Generative AI** applications using **LLMs, LangGraph, RAG, MCP, and AI Agents**
 - 📊 Strong background in **Statistics**, Machine Learning, and Data Analytics
 - ☁️ Interested in **Azure**, **AWS**, Data Engineering & MLOps
-- 🌍 Exploring **Geospatial Intelligence** (Uber H3, Location Intelligence, Mapping Systems)
 - 📹 Building AI products around Video Understanding and Conversational AI
 - 🎵 Creating motivational music powered by AI
 
