@@ -15,7 +15,7 @@ Passionate about solving real-world problems using Artificial Intelligence, Mach
 - 💼 Data Scientist with **5+ years** of industry experience
 - 🤖 Building **Generative AI** applications using **LLMs, LangGraph, RAG, MCP, and AI Agents**
 - 📊 Strong background in **Statistics**, Machine Learning, and Data Analytics
-- ☁️ Interested in **Azure**, **AWS**, Data Engineering & MLOps
+- ☁️ Interested in **Azure**, **AWS**, **GCP**, Data Engineering & MLOps
 - 📹 Building AI products around Video Understanding and Conversational AI
 - 🎵 Creating motivational music powered by AI
 
