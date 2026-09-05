@@ -64,7 +64,7 @@ Also published: *An ML Approach for Predicting Groundwater Quality (SDG 6.0)*, i
 ## Contributions, in three dimensions
 
 <p align="center">
-  <img src="profile-3d-contrib/profile-night-rainbow.svg" width="100%" alt="A 3D isometric render of the last year of contributions.">
+  <img src="assets/contrib.svg" width="100%" alt="A 3D isometric render of the last year of contributions.">
 </p>
 
 ## Tools
