@@ -1,12 +1,14 @@
 # Save this file in your profile repo at: .github/workflows/profile-3d.yml
-# It regenerates the 3D contribution calendar once a day and commits it back.
+# Regenerates the 3D contribution calendar once a day and commits it back.
+# No third-party action and no extra token — it reads your public
+# contribution grid from github.com and redraws assets/contrib.svg.
 
-name: 3D contribution calendar
+name: Contribution calendar
 
 on:
   schedule:
-    # 05:30 IST — pick any time you like, cron is UTC
-    - cron: "0 0 * * *"
+    # 01:00 UTC daily — cron is always UTC
+    - cron: "0 1 * * *"
   workflow_dispatch:
 
 permissions:
@@ -15,20 +17,21 @@ permissions:
 jobs:
   build:
     runs-on: ubuntu-latest
-    name: generate-github-profile-3d-contrib
     steps:
       - uses: actions/checkout@v5
 
-      - uses: yoshi389111/github-profile-3d-contrib@v0.9.3
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          USERNAME: ${{ github.repository_owner }}
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Redraw the calendar
+        run: python tools/build_contrib.py "${{ github.repository_owner }}" assets/contrib.svg
 
       - name: Commit and push
         run: |
           git config user.name github-actions
           git config user.email github-actions@github.com
-          git add -A profile-3d-contrib
-          if git commit -m "Refresh 3D contribution calendar"; then
+          git add assets/contrib.svg
+          if git commit -m "Refresh contribution calendar"; then
             git push
           fi
